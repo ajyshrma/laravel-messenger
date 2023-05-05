@@ -5,7 +5,7 @@ use Ajyshrma69\LaravelMessenger\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['web', 'auth'])->as('laravel.messenger.')->group(function () {
-    Route::get('test', [ChatController::class, 'index']);
+    Route::get('messenger', [ChatController::class, 'index'])->name('chats');
     Route::post('load-message', [ChatController::class, 'loadMessages'])->name('load.messages');
     Route::post('create-new-chat', [ChatController::class, 'createNewChat'])->name('create.chat');
 
