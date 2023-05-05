@@ -1,0 +1,31 @@
+{
+    "name": "ajyshrma69/laravel-messenger",
+    "description": "Chat Plugin for laravel",
+    "autoload": {
+        "psr-4": {
+            "Ajyshrma69\\LaravelMessenger\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "ajyshrma69",
+            "email": "ajyshrma69@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "laravolt/avatar": "^4.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ajyshrma69\\LaravelMessenger\\MessengerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
